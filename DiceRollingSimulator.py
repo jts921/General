@@ -1,11 +1,28 @@
-i = 1
-while i <= 5:
-    print(i)
-    i = i+1
-print('6')
+print("Would you like to roll a die?")
 
-random.seed(1,2)
+x = input()
 
+if (x == "yes"):
+    import random
+    for x in range (1):
+        print (random.randint(1,6))
 
+print("Would you like to try again?")
 
+y = input()
 
+if (y == "yes"):
+    while (y == "yes"):
+        import random
+        for x in range (1):
+            print (random.randint(1,6))
+            print ("Would you like to try again?")
+            y = input()
+
+if (y != "yes"):
+    print("Thank you for playing")
+
+#random number generator (rng)
+#import random
+#for x in range (1):
+#    print (random.randint(1,6))
