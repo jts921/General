@@ -19,7 +19,7 @@ if (y == "yes"):
             print ("Would you like to try again?")
             y = input()
 
-if (y != "yes"):
+if (y == "no"):
     print("Thank you for playing")
 
 #random number generator (rng)
