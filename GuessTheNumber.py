@@ -1,18 +1,23 @@
 #random number generator (rng)
 import random
 for x in range (1):
-    x = random.randint(1,2)
+    x = int(random.randint(1,10))
 
-print(x)
+#print(x)
 
 print("Guess a number.")
 
-user_input = input()
+y = int(input())
 
-if(x == user_input):
-    print("Good Job!")
+while(x!=y):
+    if(x<y):
+        print("Too High")
+        print("Try Again")
+        y = int(input())
+    if(x>y):
+        print("Too Low")
+        print("Try Again")
+        y = int(input())
 
-#if(x != user_input):
-#    print("Try Again")
-
-#print (user_input)
+if(x == y):
+    print("Good job")
